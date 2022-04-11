@@ -94,7 +94,7 @@
           </div> 
           <div class="content-container-right">
             <img src="./asset/Profile.png" alt="Drawing" style="
-            height: 255px;
+            height: 250px;
             border: 1px solid #ccc;
             border-radius: 5px;
             -moz-border-radius: 15px;
@@ -105,8 +105,8 @@
 
         <div id="Contact"></div>
         <!-- <p style="text-align:justify; text-justify:inter-ideograph;"> <a
-            href="ToProspectiveStudents.pdf" target="_blank"><img src="./asset/new.gif">[课题组]</a></p>
-        <p style="text-align:justify; text-justify:inter-ideograph;">联系</p> -->
+            href="ToProspectiveStudents.pdf" target="_blank"><img src="./asset/new.gif">[Research Group]</a></p>
+        <p style="text-align:justify; text-justify:inter-ideograph;">Contact me!</p> -->
 	
 	<ul class="work-list">
 	<p>	
@@ -439,10 +439,10 @@
 
   <script type="text/javascript" src="./asset/jquery.js"></script>
   <script type="text/javascript">
-    //用于判断导航栏的状态
+    //Check Nevigation status
     var toggle = true;
 
-    //导航栏按钮
+    // Nevigation Menu
     $('.btnImg').click(function() {
       if (toggle) {
         $('.btnImg').css("border", "1px solid #b0ccf3");
@@ -454,9 +454,9 @@
       $(".show").slideToggle(300);
     })
 
-    //窗口大小发生改变
+    // Window Changes
     $(window).resize(function() {
-      //获取窗口宽度
+      // Acquire Window Width
       var windSize = $(window).width();
 
       if (windSize > 576) {
@@ -466,13 +466,13 @@
       }
     });
 
-    // 锚点控制函数
+    // Anchor Controal Funciton
     function finishJump() {
-      // 调整30px 以防内容被挡住
+      // Adjust to 30px to avoid blocking 
       var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
       document.documentElement.scrollTop = scrollTop - 50
-      // 关闭导航栏
-      //获取窗口宽度
+      // Close Nevigation
+      // Acquire Window Width
       var windSize = $(window).width();
       console.log("windSize:", windSize)
       if (windSize < 576) {
@@ -486,34 +486,34 @@
     // <li><a id="RecentNav">What's New</a></li>
     // <li><a id="PublicationsNav">Publications</a></li>
     // <li><a id="ProfessionalNav">Professional Activities</a></li>
-    // 回到顶部
+    // To Top of this page
     $("#logo").click(function() {
       document.documentElement.scrollTop = 0
     });
-    // 具体锚点控制
+    // Post-jump adjustment
     $("#BiographyNav").click(function() {
       $("#Biography")[0].scrollIntoView()
-      // 跳转后调整
+      // Post-jump adjustment
       finishJump()
     });
     $("#ContactNav").click(function() {
       $("#Contact")[0].scrollIntoView()
-      // 跳转后调整
+      // Post-jump adjustment
       finishJump()
     });
     $("#RecentNav").click(function() {
       $("#Recent")[0].scrollIntoView()
-      // 跳转后调整
+      // Post-jump adjustment
       finishJump()
     });
     $("#PublicationsNav").click(function() {
       $("#Publications")[0].scrollIntoView()
-      // 跳转后调整
+      // Post-jump adjustment
       finishJump()
     });
     $("#ProfessionalNav").click(function() {
       $("#Professional")[0].scrollIntoView()
-      // 跳转后调整
+      // Post-jump adjustment
       finishJump()
     });
   </script>
@@ -543,7 +543,7 @@
       display: none;
     }
 
-    /* 背景层 */
+    /* Background */
     .main-container {
       width: 100%;
       background-color: rgba(255, 255, 255, 0.8);
@@ -552,7 +552,7 @@
       padding: 30px;
     }
 
-    /* 简介 */
+    /* Introduction */
     .content-container {
       width: 100%;
       text-align: center;
@@ -575,7 +575,7 @@
       margin: 20px 0;
     }
 
-    /* 导航栏 */
+    /* navigation */
     .c-nav {
       width: 100%;
       background-color: white;
