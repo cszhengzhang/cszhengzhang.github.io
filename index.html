@@ -62,7 +62,7 @@
         </div> -->
         <div class="flexItem show">
           <ul>
-            <li><a id="ContactNav">Contact</a></li>
+            <li><a id="ContactInf">Contact</a></li>
             <li><a id="BiographyNav">Biography</a></li>
             <li><a id="RecentNav">What's New</a></li>
             <li><a id="PublicationsNav">Publications</a></li>
@@ -123,7 +123,7 @@
 	</p>
 	</ul>
 
-        <div id="ContactNav"></div>
+        <div id="ContactInf"></div>
 		<font size = "5.5" face = "Georgia" color="Brown"><b>Biography</b></font><br><br>
         <p style="text-align:justify; text-justify:inter-ideograph;">
        		Dr. Zheng Zhang received his Ph.D. degree in Computer Applied Technology from the Harbin Institute of Technology, China. 
@@ -497,7 +497,7 @@
       }
     }
     // <li><a id="BiographyNav">Biography</a></li>
-    // <li><a id="ContactNav">Contact</a></li>
+    // <li><a id="ContactInf">Contact</a></li>
     // <li><a id="RecentNav">What's New</a></li>
     // <li><a id="PublicationsNav">Publications</a></li>
     // <li><a id="ProfessionalNav">Professional Activities</a></li>
@@ -505,15 +505,12 @@
     $("#logo").click(function() {
       document.documentElement.scrollTop = 0
     });
-    // Post-jump adjustment
-    $("#ContactNav").click(function() {
+     $("#ContactInf").click(function() {
       $("#Contact")[0].scrollIntoView()
-      // Post-jump adjustment
       finishJump()
     });
-      $("#BiographyNav").click(function() {
+     $("#BiographyNav").click(function() {
       $("#Biography")[0].scrollIntoView()
-      // Post-jump adjustment
       finishJump()
     });
     $("#RecentNav").click(function() {
