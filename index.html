@@ -66,6 +66,7 @@
             <!-- <li><a id="RecentNav">What's New</a></li> -->
             <li><a id="PublicationsNav">Publications</a></li>
             <li><a id="ProfessionalNav">Professional Activities</a></li>
+	    <li><a id="GroupNav">Group</a></li>
           </ul>
         </div>
       </div>
@@ -451,7 +452,7 @@
 				IEEE/ACM Trans. on Computational Biology and Bioinformatics (T-CBB), Medical Image Analysis (MIA), ACM Trans. on the Web (T-WEB), 
 				Information Processing & Management (IPM, Outstanding Reviewer), Information Fusion, IEEE/CAA Journal of Automatica Sinica, etc.
 			</ul>	
-        <div id="group"></div></br>
+        <div id="Group"></div></br>
 		<p style="margin-bottom: 15px"><font size = "4.5" face = "Verdana" color="Brown"><b>Research Group</b></font></p>
 		<b>Current Research Students</b> 
 		<ul>
@@ -631,6 +632,7 @@
     // <li><a id="RecentNav">What's New</a></li>
     // <li><a id="PublicationsNav">Publications</a></li>
     // <li><a id="ProfessionalNav">Professional Activities</a></li>
+   // <li><a id="GroupNav">Group</a></li>
     // To Top of this page
     $("#logo").click(function() {
       document.documentElement.scrollTop = 0
@@ -646,6 +648,11 @@
     });
     $("#ProfessionalNav").click(function() {
       $("#Professional")[0].scrollIntoView()
+      // Post-jump adjustment
+      finishJump()
+    });
+   $("#GroupNav").click(function() {
+      $("#Group")[0].scrollIntoView()
       // Post-jump adjustment
       finishJump()
     });
