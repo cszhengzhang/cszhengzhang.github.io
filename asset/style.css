@@ -661,7 +661,7 @@ a:hover {
   }
 }
 
-.main-content {
+/* .main-content {
   word-wrap: break-word;
   background-image: url("./Background.png");
   max-width: 100%;
@@ -674,7 +674,7 @@ a:hover {
   background-attachment: fixed;
   opacity: 1;
   position: relative;
-}
+} */
 
 .main-content :first-child {
   margin-top: 0
