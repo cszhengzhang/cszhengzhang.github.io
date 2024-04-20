@@ -677,7 +677,7 @@ a:hover {
 } */
 
 .main-content :first-child {
-  margin-top: 0
+ /*  margin-top: 0 */
 }
 
 @media screen and (min-width: 64em) {
